@@ -1,0 +1,22 @@
+body {
+    background-color: #123;
+    font-family: Arial, sans-serif;
+    background-image: url("https://gileduardo.com.br/ifpr/dw/img/background.png");
+}
+table
+{
+    background-color: blue;
+    padding: 20px 50px 50px 50px;
+}
+th
+{
+    padding-left: 25px;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+}
