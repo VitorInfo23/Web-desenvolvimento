@@ -1,0 +1,96 @@
+$gray: #d3d3d3;
+$border-color: #444;
+$selected: #000;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.controls {
+  width: 300px;
+  background: $gray;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 20px;
+    span {
+      font-weight: normal;
+    }
+  }
+
+  .section {
+    margin: 20px 0;
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .colors {
+      display: grid;
+      grid-template-columns: repeat(3, 40px);
+      height: 75px;
+      gap: 10px;
+    }
+
+    .shape-options {
+      display: flex;
+      gap: 10px;
+
+      .shape {
+        border: 2px solid transparent;
+        background: white;
+        font-size: 30px;
+        padding: 5px;
+        cursor: pointer;
+
+        &.selected {
+          border-color: $selected;
+        }
+      }
+    }
+
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.preview {
+  flex: 1;
+  padding: 30px;
+
+  .flex-container {
+    display: flex;
+    gap: 10px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    flex-wrap: wrap;
+
+    .item {
+      background: #dc84f3;
+      width: 140px;
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #333;
+      font-size: 24px;
+      font-weight: bold;
+      border: 3px solid $border-color;
+    }
+  }
+}
