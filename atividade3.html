@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        
+        <img src="c:\Users\Vitor\Downloads\memory_icon.png">
+        <div class="text">MEMORY GAME</div> 
+
+    </header>
+    <div class="container">
+        <div class="option" onclick="selecTheme('carro')">
+            <img src="c:\Users\Vitor\Downloads\carro.png" >
+        </div>
+        <div class="option" onclick="selecTheme('moto')">
+            <img src="c:\Users\Vitor\Downloads\moto.png">
+        </div>
+        <div class="option"  onclick="selecTheme('jetski')">
+            <img src="c:\Users\Vitor\Downloads\jetski.png">
+        </div>
+    </div>
+    <div class="footer">Desenvolvimento: Gil Eduardo de Andrade</div>
+    <script>
+        function selecTheme(theme) 
+        {
+            alert("você escolheu o tema: "+ theme);
+            window.location.href = "../WEB DESENVOLVIMENTO/card/"+ theme + ".html";
+        }
+
+
+    </script>
+</body>
+</html>
