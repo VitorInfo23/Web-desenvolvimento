@@ -1,0 +1,99 @@
+#AreaGame
+{
+    margin: auto;
+    background-image: url("background3.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    animation: mover 5s linear infinite;
+    animation-play-state: running;
+    outline: none;
+}
+*:focus
+{
+    outline: none;
+}
+#container
+{
+    display: grid;
+    
+    position: absolute;
+    padding: 15px;
+    border-color: white;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 10px;
+    left: 10px;
+}
+.item
+{
+    
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+span, div
+{
+    color: white;
+}
+
+#container img
+{
+    width: 50px;
+    margin: 5px 0;
+}
+#enemy
+{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.alien
+{
+    width: 100px;
+    position: absolute; 
+    
+    
+}
+
+#game
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#nave
+{
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 10px;
+    width: 80px;
+    cursor: none;
+}
+.missil
+{
+    position: absolute;
+    bottom: 40px;
+    width: 15px;
+    display: none;
+    
+}
+#missil-left
+{
+    
+   transform: translateX(-160%);
+ 
+
+}
+#missil-right
+{
+
+    transform: translateX(70%);
+    
+}
