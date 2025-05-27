@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    width: 350px;
+
+    border-right: 1px solid #ccc;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+.container a {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+}
+
+.container a span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+form button {
+  margin: 4px 0;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 0;
+  background-color: lightgreen;
+  
+}
+form input
+{
+    margin: 4px 0;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: 2px solid cadetblue
+}
+
+.hidden {
+  display: none;
+  transition: 0.2s;
+}
+
+.visible {
+  display: block;
+  margin-top: 10px;
+  min-height: 250px;
+  transition: 0.2s;
+}
+select {
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.table-container {
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.table-container h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    padding: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.assuntos thead {
+    background-color: #cfe2ff;
+}
+
+.agentes thead {
+    background-color: #d1e7dd;
+}
+
+.regionais thead {
+    background-color: #fff3cd;
+}
+
+.relatorios thead {
+    background-color: #f8d7da;
+}

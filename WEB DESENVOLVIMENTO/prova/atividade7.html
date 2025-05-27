@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body id="AreaGame" onload="StartTimer(); launchAliens(); launchMissile(); updateLifeCount();">
+    
+    <div id="container">
+        
+        <div class="item">
+            <img src="clock.png" alt="clock">
+            <span id="timer">00:00:00</span>
+        </div>
+        <div class="item">
+            <img src="nave.png" alt="nave">
+            <span>LIFE:<span id="life">3</span></span>
+        </div>
+        <div class="item">
+            <img src="alien.png" alt="alien">
+            <span>ALIEN: <span id="alienlist">0</span></span>
+        </div>
+        </div>
+
+    </div>
+    <div id="enemy">
+        <img  id="alien1" class="alien" src="alien.png" alt="alien">
+        <img  id="alien2" class="alien" src="alien.png" alt="alien">
+        <img  id="alien3" class="alien" src="alien.png" alt="alien">
+
+    </div>
+
+    <div id="game">
+        <img class="missil" id="missil-right" src="missil.png" alt="missil">
+        <img class="missil" id="missil-left" src="missil.png" alt="missil">
+        <img id="nave" src="nave.png" alt="nave">
+    </div>
+    
+    
+
+
+    <script src="script1.js"></script>
+</body>
+</html>

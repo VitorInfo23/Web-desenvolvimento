@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style6.css">
+  <title>Sistema</title>
+</head>
+<body>
+  <div class="layout">
+    <!-- MENU LATERAL -->
+    <div class="container">
+      <!-- Agentes -->
+      <a href="#">
+        <span>
+          Assuntos
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+          </svg>
+        </span>
+        <form class="hidden">
+            <input type="text" placeholder="Nome do Assunto">
+            <button type="submit">Cadastrar</button>
+        </form>
+      </a>
+
+      <!-- Regionais -->
+      <a href="#">
+        <span>
+          Regionais
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+          </svg>
+        </span>
+        <form class="hidden">
+          <input type="text" placeholder="Sigla">
+          <input type="text" placeholder="Cidade">
+          <button type="submit">Cadastrar</button>
+        </form>
+      </a>
+
+      <!-- Assuntos -->
+      <a href="#">
+        <span>
+          Agentes
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+          </svg>
+        </span>
+        <form class="hidden">
+          <input type="text" placeholder="Nome do Agente">
+          <select>
+            <option>Regionais</option>
+          </select>
+          <button type="submit">Cadastrar</button>
+        </form>
+      </a>
+
+      <!-- Relatórios -->
+      <a href="#">
+        <span>
+          Relatórios de Inteligência
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+          </svg>
+        </span>
+        <form class="hidden">
+          <input type="date" placeholder="Data">
+          <input type="text" placeholder="Assunto">
+          <input type="text" placeholder="Agente">
+          <button type="submit">Cadastrar</button>
+        </form>
+      </a>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="content">
+      <div class="table-container assuntos">
+        <h3>ASSUNTOS</h3>
+        <table>
+          <thead>
+            <tr><th>ID</th><th>NOME</th></tr>
+          </thead>
+        </table>
+      </div>
+
+      <div class="table-container agentes">
+        <h3>AGENTES</h3>
+        <table>
+          <thead>
+            <tr><th>ID</th><th>NOME</th><th>REGIONAL</th></tr>
+          </thead>
+        </table>
+      </div>
+
+      <div class="table-container regionais">
+        <h3>REGIONAIS</h3>
+        <table>
+          <thead>
+            <tr><th>ID</th><th>SIGLA</th><th>CIDADE</th></tr>
+          </thead>
+        </table>
+      </div>
+
+      <div class="table-container relatorios">
+        <h3>RELATÓRIOS</h3>
+        <table>
+          <thead>
+            <tr><th>ID</th><th>DATA</th><th>ASSUNTO</th><th>AGENTE</th></tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
