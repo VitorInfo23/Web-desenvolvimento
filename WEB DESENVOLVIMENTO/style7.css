@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.accordion-container {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Accordion */
+.accordion {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+/* Cabeçalho clicável */
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #cfe2ff;
+}
+
+/* Corpo com transição */
+.accordion-body {
+    background-color: #f9f9f9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 15px;
+}
+
+/* Quando ativo */
+.accordion.active .accordion-body {
+    max-height: 300px;
+    padding: 15px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #1a8754;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.output {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: 0.2s;
+}
+
+.saida
+{
+    text-align: center;
+    font-size: 50px;
+    margin:
+    
+}

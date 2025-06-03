@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     
 }
+
 .container a {
   display: flex;
   flex-direction: column;
@@ -42,8 +43,8 @@ form button {
   border-radius: 3px;
   padding: 10px 0;
   background-color: lightgreen;
-  
 }
+
 form input
 {
     margin: 4px 0;

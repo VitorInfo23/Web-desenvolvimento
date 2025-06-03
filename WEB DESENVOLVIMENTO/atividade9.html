@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+
+    <div class="accordion-container">
+        <div class="accordion">
+            <button class="accordion-header">1) Parâmetros Variáveis (arguments)</button>
+            <div class="accordion-body">
+                <p>
+                    Receba um número indefinido de argumentos numéricos, calcule a média dos valores e apresente o resultado. Utilize o objeto <code>arguments</code> para processar os parâmetros.
+                </p>
+                <input type="text" id="inputValores1" placeholder="">
+                <button onclick="executarEx1()">Calcular</button>
+                <div class="output" id="saida1"></div>
+            </div>
+        </div>
+
+    <div class="accordion">
+        <button class="accordion-header">2) Arrow Function + rest</button>
+        <div class="accordion-body">
+            <p>
+                Refatore a função do exercício anterior para utilizar arrow function e rest parameters ( ... ).
+            </p>
+            <input type="text" id="inputValores2" placeholder="">
+            <button onclick="executarEx2()">Calcular</button>
+            <div class="output" id="saida2"></div>
+        </div>
+    </div>
+
+
+    <div class="accordion">
+        <button class="accordion-header">3) Array / Map</button>
+        <div class="accordion-body">
+            <p>
+                Receba um número indefinido de argumentos numéricos e indique se os elementos recebidos são PARES ou ÍMPARES. Utilize a diretiva "MAP" para percorrer os elementos.
+            </p>
+            <input type="text" id="inputValores3" placeholder="">
+            <button onclick="executarEx3()">Calcular</button>
+            <div class="output" id="saida3"></div>
+        </div>
+    </div>
+
+
+
+    <div class="accordion">
+        <button class="accordion-header">4) Arrow / filtre</button>
+        <div class="accordion-body">
+            <p>
+                Receba um número indefinido de argumentos numéricos e filtre esses valores mantendo apenas os valores que são PERFEITOS. Utilize a diretiva "FILTER" durante a resolução.
+            </p>
+            <input type="text" id="inputValores4" placeholder="">
+            <button onclick="executarEx4()">Calcular</button>
+            <div class="output" id="saida4"></div>
+        </div>
+    </div>
+
+
+
+    <div class="accordion">
+        <button class="accordion-header">5) Factory</button>
+        <div class="accordion-body">
+            <p>
+                Receba uma string em formato JSON e utilize uma função contrutora para criar um objeto a partir dela. Após isso apresente todas as propriedades e valores do objeto criado.
+            </p>
+            <input type="text" id="inputValores5" placeholder="">
+            <button onclick="executarEx5()">Calcular</button>
+            <div class="output" id="saida5"></div>
+        </div>
+    </div>
+    <h1 class="saida">Saida</h1>
+
+
+    <script src="script3.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
